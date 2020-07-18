@@ -14,7 +14,7 @@ $ docker-compose build
 
 ### Reactアプリ作成
 ```bash
-$ docker-compose run --rm app sh -c "npm install -g create-react-app && create-react-app react-sample"
+$ docker-compose run --rm app sh -c "npm install -g create-react-app && create-react-app app"
 ```
 
 ### コンテナ起動
