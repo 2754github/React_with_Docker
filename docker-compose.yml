@@ -1,0 +1,15 @@
+version: '3.5'
+services:
+  app:
+    stdin_open: true # https://teratail.com/questions/249875
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/usr/src/app # ローカルとコンテナ内の同期
+      - yarn-cache:/usr/local/share/.cache/yarn/v2
+    command: sh -c "cd react-sample && yarn start"
+    ports:
+      - "3001:3001"
+volumes:
+  yarn-cache:
