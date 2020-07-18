@@ -18,6 +18,12 @@ $ docker-compose run --rm app sh -c "npm install -g create-react-app && create-r
 ```
 ※かなり時間かかる
 
+### ついでにmaterial-uiも導入
+```bash
+$ docker-compose run --rm app sh -c "cd react-app && npm install @material-ui/core"
+```
+※かなり時間かかる
+
 ### コンテナ起動
 ```bash
 $ docker-compose up
