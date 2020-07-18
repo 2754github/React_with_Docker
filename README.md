@@ -16,6 +16,7 @@ $ docker-compose build
 ```bash
 $ docker-compose run --rm app sh -c "npm install -g create-react-app && create-react-app app"
 ```
+※かなり時間かかる
 
 ### コンテナ起動
 ```bash
