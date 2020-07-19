@@ -12,9 +12,9 @@ $ docker-compose build
 ```
 ※かなり時間かかる
 
-### Reactアプリ作成
+### Reactアプリ作成（w/TypeScript）
 ```bash
-$ docker-compose run --rm app sh -c "npm install -g create-react-app && create-react-app react-app"
+$ docker-compose run --rm app sh -c "npx create-react-app react-app --typescript"
 ```
 ※かなり時間かかる
 
