@@ -2,14 +2,9 @@ version: '3.5'
 services:
   app:
     stdin_open: true # https://teratail.com/questions/249875
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: .
     volumes:
       - ./:/usr/src/app # ローカルとコンテナ内の同期
-      - yarn-cache:/usr/local/share/.cache/yarn/v2 # https://qiita.com/lisp719/items/432be06fb333d6158eb1
     command: sh -c "cd react-app && PORT=3001 yarn start"
     ports:
       - "3001:3001"
-volumes:
-  yarn-cache:
