@@ -20,14 +20,16 @@ $ docker-compose run --rm app sh -c "npx create-react-app react-app --template t
 
 ### ついでにいろいろ導入
 ```bash
-$ docker-compose run --rm app sh -c "cd react-app && npm install @material-ui/core"
+$ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @material-ui/core"
+$ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @material-ui/icons"
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add axios"
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @emotion/core @emotion/styled"
 ```
 ※かなり時間かかる  
 
 - [@material-ui](https://material-ui.com/)
-- [axios](https://yarnpkg.com/package/axios)
+- [@material-ui/icons](https://material-ui.com/components/material-icons/)
+- [axios](https://github.com/axios/axios)
 - [@emotion](https://emotion.sh/docs/install)
 
 参考: dockerでyarn addすると遅い問題を改善する  
