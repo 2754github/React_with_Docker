@@ -22,6 +22,7 @@ $ docker-compose run --rm app sh -c "npx create-react-app react-app --template t
 ```bash
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @material-ui/core"
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @material-ui/icons"
+$ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @material-ui/lab"
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add axios"
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @emotion/core @emotion/styled"
 ```
@@ -29,6 +30,7 @@ $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn ad
 
 - [@material-ui](https://material-ui.com/)
 - [@material-ui/icons](https://material-ui.com/components/material-icons/)
+- [@material-ui/lab](https://material-ui.com/components/about-the-lab/)
 - [axios](https://github.com/axios/axios)
 - [@emotion](https://emotion.sh/docs/install)
 
