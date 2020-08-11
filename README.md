@@ -25,14 +25,10 @@ $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn ad
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @material-ui/lab"
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add axios"
 $ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @emotion/core @emotion/styled"
+$ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add @types/react-router-dom"
+$ docker-compose run --rm app sh -c "cd react-app && yarn cache clean && yarn add redux react-redux @types/react-redux"
 ```
 ※かなり時間かかる  
-
-- [@material-ui](https://material-ui.com/)
-- [@material-ui/icons](https://material-ui.com/components/material-icons/)
-- [@material-ui/lab](https://material-ui.com/components/about-the-lab/)
-- [axios](https://github.com/axios/axios)
-- [@emotion](https://emotion.sh/docs/install)
 
 参考: dockerでyarn addすると遅い問題を改善する  
 https://qiita.com/lisp719/items/432be06fb333d6158eb1
